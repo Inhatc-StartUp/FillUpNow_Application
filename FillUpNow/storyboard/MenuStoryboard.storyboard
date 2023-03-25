@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--메뉴-->
+        <scene sceneID="AhW-DQ-LbB">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXv-S2-HZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="MenuStoryBoard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="169-yD-qW6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="메뉴" image="person" catalog="system" selectedImage="person.fill" id="ako-JM-SwK"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rLY-7r-eiG">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iXV-zp-j4h" kind="relationship" relationship="rootViewController" id="raL-Ze-XPm"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="80" y="-783"/>
+        </scene>
+        <!--메뉴-->
+        <scene sceneID="yWt-wa-A4C">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" id="iXV-zp-j4h" customClass="MenuViewController" customModule="FillUpNow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lzx-RS-e8S">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQQ-Gh-RT3">
+                                <rect key="frame" x="16" y="80" width="361" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="FoG-Af-JBi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="person" catalog="system" title="로그인이 필요합니다.">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="DlK-Kf-ED1" kind="show" id="rys-9T-irf"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NA3-6E-akN">
+                                <rect key="frame" x="16" y="196" width="361" height="137.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaP-wr-KqZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="로그인">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="DlK-Kf-ED1" kind="show" id="2IH-Fy-mZb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ois-Un-IOw">
+                                        <rect key="frame" x="0.0" y="34.333333333333343" width="361" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="회원가입">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="PLY-Db-MBW" kind="show" id="JEZ-Nb-PLm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PX0-X7-6bw">
+                                        <rect key="frame" x="0.0" y="68.666666666666686" width="361" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="공지사항">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="p9t-3C-6it" kind="show" id="CFQ-HN-C6s"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4Uo-XT-2vC">
+                                        <rect key="frame" x="0.0" y="103" width="361" height="34.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcy-96-czT">
+                                                <rect key="frame" x="0.0" y="0.0" width="301" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="PUSH 알림">
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rrp-Xg-Y63">
+                                                <rect key="frame" x="301" y="1.6666666666666856" width="62" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="nDF-AS-46d"/>
+                                                </constraints>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r1r-3d-x7X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bQQ-Gh-RT3" firstAttribute="leading" secondItem="r1r-3d-x7X" secondAttribute="leading" constant="16" id="IAp-RJ-AKz"/>
+                            <constraint firstItem="r1r-3d-x7X" firstAttribute="trailing" secondItem="NA3-6E-akN" secondAttribute="trailing" constant="16" id="If7-Ku-626"/>
+                            <constraint firstItem="bQQ-Gh-RT3" firstAttribute="top" secondItem="lzx-RS-e8S" secondAttribute="top" constant="80" id="Lyu-w0-ftW"/>
+                            <constraint firstItem="NA3-6E-akN" firstAttribute="leading" secondItem="r1r-3d-x7X" secondAttribute="leading" constant="16" id="UER-jT-LQU"/>
+                            <constraint firstItem="NA3-6E-akN" firstAttribute="top" secondItem="bQQ-Gh-RT3" secondAttribute="bottom" constant="16" id="ZP2-gX-dVB"/>
+                            <constraint firstItem="r1r-3d-x7X" firstAttribute="trailing" secondItem="bQQ-Gh-RT3" secondAttribute="trailing" constant="16" id="lWb-sn-nPg"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="메뉴" id="YaN-uJ-Rwz"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="noticeButton" destination="PX0-X7-6bw" id="rh3-0q-AI5"/>
+                        <outlet property="pushAlarmSwitch" destination="rrp-Xg-Y63" id="UiD-xg-xff"/>
+                        <outlet property="signinButton" destination="XaP-wr-KqZ" id="IOa-TK-etT"/>
+                        <outlet property="signupButton" destination="ois-Un-IOw" id="9bO-i9-fHn"/>
+                        <outlet property="userInfoButton" destination="bQQ-Gh-RT3" id="5RZ-I2-KjW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XgC-SK-ygz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="-783"/>
+        </scene>
+        <!--로그인-->
+        <scene sceneID="A6e-WP-YtV">
+            <objects>
+                <viewController storyboardIdentifier="SigninViewController" id="DlK-Kf-ED1" customClass="SigninViewController" customModule="FillUpNow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b9f-vb-HB9" customClass="Sign">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="94r-gd-2Ca"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="로그인" id="Duh-av-cgZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8XX-zM-KiZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="-1183"/>
+        </scene>
+        <!--공지사항-->
+        <scene sceneID="9ff-MD-bRz">
+            <objects>
+                <viewController storyboardIdentifier="NoticeViewController" id="p9t-3C-6it" customClass="NoticeViewController" customModule="FillUpNow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e35-Zi-w0f">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ya1-4W-8ip"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="공지사항" id="iZ3-zX-tcp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCM-Cn-RLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="-275"/>
+        </scene>
+        <!--회원가입-->
+        <scene sceneID="O6J-bY-q0K">
+            <objects>
+                <viewController storyboardIdentifier="SignupViewController" id="PLY-Db-MBW" customClass="SignupViewController" customModule="FillUpNow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Iw-Oq-gBe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="M9A-Qf-N8n"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="회원가입" id="iC2-63-8wC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="19P-kh-wWo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2523" y="-783"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rys-9T-irf"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
