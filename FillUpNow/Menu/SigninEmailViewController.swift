@@ -13,9 +13,7 @@ class SigninEmailViewController: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        
     }
     
     @IBAction func loginActionButton(_ sender: UIButton) {
