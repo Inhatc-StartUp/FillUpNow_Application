@@ -9,6 +9,11 @@ import UIKit
 
 class SignupViewController: UIViewController {
 
+    @IBOutlet weak var signupWithEmailButton: UIButton!
+    @IBOutlet weak var signupWithAppleButton: UIButton!
+    @IBOutlet weak var signupWithKaKaoButton: UIButton!
+    @IBOutlet weak var signupWithNaverButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
