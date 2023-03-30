@@ -10,17 +10,12 @@ import UIKit
 class SignupEmailViewController: UIViewController {
     
     @IBOutlet weak var txtEmail: UITextField!
-    
     @IBOutlet weak var txtPassword: UITextField!
-    
     @IBOutlet weak var txtPasswordCheck: UITextField!
-    
     @IBOutlet weak var txtName: UITextField!
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-
     }
     
     
