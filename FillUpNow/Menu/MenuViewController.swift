@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+final class MenuViewController: UIViewController {
     
     @IBOutlet weak var userInfoButton: UIButton!
     @IBOutlet weak var signinButton: UIButton!

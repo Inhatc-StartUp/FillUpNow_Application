@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F511C8B829D3FCAB00EFFB68 /* SigninEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511C8B729D3FCAB00EFFB68 /* SigninEmailViewController.swift */; };
-		F511C8BA29D3FD3A00EFFB68 /* SignupEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511C8B929D3FD3A00EFFB68 /* SignupEmailViewController.swift */; };
+		F50F945E29DD3D0100D73FC7 /* MemberViewController.swfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F945D29DD3D0100D73FC7 /* MemberViewController.swfit.swift */; };
+		F50F946029DD412D00D73FC7 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F945F29DD412D00D73FC7 /* SignupViewController.swift */; };
 		F51200FC29CEAAE000A9715D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51200FB29CEAAE000A9715D /* MainTabBarController.swift */; };
 		F549933C29CEC1B400A3B45A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549933B29CEC1B400A3B45A /* HomeViewController.swift */; };
 		F549933E29CEC1CB00A3B45A /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549933D29CEC1CB00A3B45A /* BookmarkViewController.swift */; };
@@ -17,7 +17,6 @@
 		F549934429CEC2C400A3B45A /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F549934329CEC2C400A3B45A /* HomeStoryboard.storyboard */; };
 		F54993A129CECABE00A3B45A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54993A029CECABE00A3B45A /* Main.storyboard */; };
 		F58E4F9329CED23C008AB6AA /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58E4F9229CED23C008AB6AA /* SigninViewController.swift */; };
-		F58E4F9529CED248008AB6AA /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58E4F9429CED248008AB6AA /* SignupViewController.swift */; };
 		F58E4F9A29CED2C3008AB6AA /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58E4F9929CED2C3008AB6AA /* NoticeViewController.swift */; };
 		F5C0EE7129CD5933006DAB0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C0EE7029CD5933006DAB0E /* AppDelegate.swift */; };
 		F5C0EE7329CD5933006DAB0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C0EE7229CD5933006DAB0E /* SceneDelegate.swift */; };
@@ -27,8 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F511C8B729D3FCAB00EFFB68 /* SigninEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninEmailViewController.swift; sourceTree = "<group>"; };
-		F511C8B929D3FD3A00EFFB68 /* SignupEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailViewController.swift; sourceTree = "<group>"; };
+		F50F945D29DD3D0100D73FC7 /* MemberViewController.swfit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swfit.swift; sourceTree = "<group>"; };
+		F50F945F29DD412D00D73FC7 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		F51200FB29CEAAE000A9715D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		F549933B29CEC1B400A3B45A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F549933D29CEC1CB00A3B45A /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +36,6 @@
 		F549934329CEC2C400A3B45A /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
 		F54993A029CECABE00A3B45A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F58E4F9229CED23C008AB6AA /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
-		F58E4F9429CED248008AB6AA /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		F58E4F9929CED2C3008AB6AA /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		F5C0EE6D29CD5933006DAB0E /* FillUpNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FillUpNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C0EE7029CD5933006DAB0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,10 +73,9 @@
 			children = (
 				F5F30A1929CECC9800B7566F /* MenuViewController.swift */,
 				F58E4F9229CED23C008AB6AA /* SigninViewController.swift */,
-				F58E4F9429CED248008AB6AA /* SignupViewController.swift */,
 				F58E4F9929CED2C3008AB6AA /* NoticeViewController.swift */,
-				F511C8B729D3FCAB00EFFB68 /* SigninEmailViewController.swift */,
-				F511C8B929D3FD3A00EFFB68 /* SignupEmailViewController.swift */,
+				F50F945D29DD3D0100D73FC7 /* MemberViewController.swfit.swift */,
+				F50F945F29DD412D00D73FC7 /* SignupViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -208,14 +205,13 @@
 			files = (
 				F58E4F9329CED23C008AB6AA /* SigninViewController.swift in Sources */,
 				F549933C29CEC1B400A3B45A /* HomeViewController.swift in Sources */,
-				F511C8BA29D3FD3A00EFFB68 /* SignupEmailViewController.swift in Sources */,
-				F58E4F9529CED248008AB6AA /* SignupViewController.swift in Sources */,
+				F50F946029DD412D00D73FC7 /* SignupViewController.swift in Sources */,
 				F5F30A1A29CECC9800B7566F /* MenuViewController.swift in Sources */,
 				F51200FC29CEAAE000A9715D /* MainTabBarController.swift in Sources */,
-				F511C8B829D3FCAB00EFFB68 /* SigninEmailViewController.swift in Sources */,
 				F5C0EE7129CD5933006DAB0E /* AppDelegate.swift in Sources */,
 				F5C0EE7329CD5933006DAB0E /* SceneDelegate.swift in Sources */,
 				F58E4F9A29CED2C3008AB6AA /* NoticeViewController.swift in Sources */,
+				F50F945E29DD3D0100D73FC7 /* MemberViewController.swfit.swift in Sources */,
 				F549933E29CEC1CB00A3B45A /* BookmarkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
