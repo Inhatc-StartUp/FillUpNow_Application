@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 final class SigninViewController: UIViewController {
 
@@ -29,6 +30,9 @@ final class SigninViewController: UIViewController {
     }
     
     @IBAction func googleLoginTappedButton(_ sender: UIButton) {
+        
+    
+        
     }
     
     @IBAction func githubLoginTappedButton(_ sender: UIButton) {
