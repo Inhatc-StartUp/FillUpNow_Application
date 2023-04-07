@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseAuth
 
-final class SignupViewController: UIViewController, UITextFieldDelegate{
+final class SignupViewController: UIViewController{
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -18,28 +18,6 @@ final class SignupViewController: UIViewController, UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-    }
-
-    @objc private func keyboardWillShow(notification: NSNotification) {
-        guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
-        self.view.frame.origin.y = 0 - keyboardSize.height
-    }
-    
-    @objc private func keyboardWillHide(notification: NSNotification) {
-        self.view.frame.origin.y = 0
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        if textField == passwordCheckTextField {
-            let screenHeight = UIScreen.main.bounds.height
-            let keyboardHeight: CGFloat = 300
-            UIView.animate(withDuration: 0.3) {
-                self.view.frame.origin.y = -(keyboardHeight - (screenHeight - self.signupButton.frame.maxY))
-            }
-        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -95,17 +73,12 @@ final class SignupViewController: UIViewController, UITextFieldDelegate{
     
     // 뷰
     private func showHomeViewController() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let tabBarController = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
-        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-            let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = tabBarController
-            self.view.window?.rootViewController = window.rootViewController
-            self.view.window?.makeKeyAndVisible()
+        if let tabBarController = self.tabBarController {
+            tabBarController.selectedIndex = 1
         }
+        self.navigationController?.popViewController(animated: true)
     }
 
-    // 회원가입 메세지 알림 출력(주훈)
     func joinAlert(withTitle title: String, message: String, email: String, password: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { action in
@@ -133,5 +106,4 @@ final class SignupViewController: UIViewController, UITextFieldDelegate{
             }
         }
     }
-
 }
