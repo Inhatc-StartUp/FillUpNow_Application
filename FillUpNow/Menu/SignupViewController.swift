@@ -17,8 +17,7 @@ final class SignupViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var signupButton: UIButton!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
+        super.viewDidLoad()        
     }
 
     
@@ -31,6 +30,7 @@ final class SignupViewController: UIViewController, UITextFieldDelegate{
     
     
     @IBAction func signupTappedButton(_ sender: UIButton) {
+
         // 변수 선언(유림)
         guard let email = emailTextField.text else {
             showAlert(withTitle: "알림", message: "이메일을 입력해주세요.")
@@ -115,5 +115,4 @@ final class SignupViewController: UIViewController, UITextFieldDelegate{
             }
         }
     }
-
 }

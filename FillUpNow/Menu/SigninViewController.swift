@@ -50,7 +50,6 @@ final class SigninViewController: UIViewController {
     }
     
     @IBAction func googleLoginTappedButton(_ sender: UIButton) {
-        
     }
     
     @IBAction func githubLoginTappedButton(_ sender: UIButton) {
@@ -59,6 +58,7 @@ final class SigninViewController: UIViewController {
     
     @IBAction func signupTappedButton(_ sender: UIButton) {
     }
+    
     //로그인 성공시 확인 버튼을 누르는 함수(유림)
     func loginAlert(withTitle title: String, message: String, email: String, password: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -80,7 +80,5 @@ final class SigninViewController: UIViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
-    }
-    
-    
+    }    
 }
