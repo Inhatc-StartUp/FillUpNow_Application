@@ -33,34 +33,44 @@ final class SignupViewController: UIViewController, UITextFieldDelegate{
     @IBAction func signupTappedButton(_ sender: UIButton) {
         // 변수 선언(유림)
         guard let email = emailTextField.text else {
-            showAlert(withTitle: "Error", message: "이메일을 입력해주세요.")
+            showAlert(withTitle: "알림", message: "이메일을 입력해주세요.")
             return
         }
         
         // 비밀번호를 입력하지 않은 경우(유림)
         guard let password = passwordTextField.text else {
-            showAlert(withTitle: "Error", message: "비밀번호를 입력해주세요.")
+            showAlert(withTitle: "알림", message: "비밀번호를 입력해주세요.")
             return
         }
         
         // 비밀번호 확인을 입력하지 않은 경우(유림)
         guard let passwordCheck = passwordCheckTextField.text else {
-            showAlert(withTitle: "Error", message: "비밀번호 확인을 입력해주세요")
+            showAlert(withTitle: "알림", message: "비밀번호 확인을 입력해주세요")
             return
         }
         
         // 비밀번호랑 비밀번호 확인이 다른 경우(유림)
         if password != passwordCheck{
-            showAlert(withTitle: "Error", message: "비밀번호가 일치하지 않습니다.")
+            showAlert(withTitle: "알림", message: "비밀번호가 일치하지 않습니다.")
             return
         }
-        
+        //이메일 형식 검사 코드(유림)
+        func isValidEmail(email: String) -> Bool {
+            let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+            return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: email)
+        }
+        //비밀번호 형식 검사 코드(유림)
+        func isValidPassword(password: String) -> Bool {
+            let passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
+            return NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: password)
+        }
+
         // 신규 사용자 생성(주훈)
         Auth.auth().createUser(withEmail: email, password: password) {[weak self] authResult, error in
             guard let self = self else { return }
             
             if let error = error {
-                self.showAlert(withTitle: "Error", message: error.localizedDescription)
+                self.showAlert(withTitle: "알림", message: error.localizedDescription)
             } else {
                 // 버튼 눌렀을 때 이동하게 만들기
                 self.joinAlert(withTitle: "성공", message: "회원가입에 성공하셨습니다.", email: email, password: password)
@@ -70,9 +80,9 @@ final class SignupViewController: UIViewController, UITextFieldDelegate{
     
     // 뷰
     private func showHomeViewController() {
-            if let tabBarController = self.tabBarController {
-                tabBarController.selectedIndex = 1
-            }
+        if let tabBarController = self.tabBarController {
+            tabBarController.selectedIndex = 1
+        }
             self.navigationController?.popViewController(animated: true)
         }
 
@@ -99,7 +109,7 @@ final class SignupViewController: UIViewController, UITextFieldDelegate{
             guard let self = self else { return }
             
             if let error = error {
-                self.showAlert(withTitle: "Error", message: error.localizedDescription)
+                self.showAlert(withTitle: "알림", message: error.localizedDescription)
             }else {
                 self.showHomeViewController()
             }

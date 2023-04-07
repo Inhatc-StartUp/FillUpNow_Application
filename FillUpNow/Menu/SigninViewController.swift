@@ -26,12 +26,12 @@ final class SigninViewController: UIViewController {
     @IBAction func loginTappedButton(_ sender: UIButton) {
         
         guard let email = emailTextField.text else {
-            showAlert(withTitle: "Error", message: "이메일을 입력해주세요.")
+            showAlert(withTitle: "알림", message: "이메일을 입력해주세요.")
             return
         }
     
         guard let password = passwordTextField.text else {
-            showAlert(withTitle: "Error", message: "비밀번호를 입력해주세요.")
+            showAlert(withTitle: "알림", message: "비밀번호를 입력해주세요.")
             return
         }
         
@@ -70,9 +70,9 @@ final class SigninViewController: UIViewController {
     }
     //홈 버튼으로 가는 함수(유림)
     private func showHomeViewController() {
-            if let tabBarController = self.tabBarController {
-                tabBarController.selectedIndex = 1
-            }
+        if let tabBarController = self.tabBarController {
+            tabBarController.selectedIndex = 1
+        }
             self.navigationController?.popViewController(animated: true)
         }
     //에러 메세지 알림 출력(유림)
