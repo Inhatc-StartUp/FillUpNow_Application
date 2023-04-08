@@ -9,7 +9,7 @@ import UIKit
 import FirebaseAuth
 
 final class SigninViewController: UIViewController {
-
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signinWithAppleButton: UIButton!
@@ -26,7 +26,7 @@ final class SigninViewController: UIViewController {
             $0?.layer.borderColor = UIColor.gray.cgColor
             $0?.layer.cornerRadius = 10
         }
-
+        
     }
     //로그인 버튼을 눌렀을 경우(유림)
     @IBAction func loginTappedButton(_ sender: UIButton) {
@@ -35,7 +35,7 @@ final class SigninViewController: UIViewController {
             showAlert(withTitle: "알림", message: "이메일을 입력해주세요.")
             return
         }
-    
+        
         guard let password = passwordTextField.text else {
             showAlert(withTitle: "알림", message: "비밀번호를 입력해주세요.")
             return
@@ -47,7 +47,7 @@ final class SigninViewController: UIViewController {
             if let error = error {
                 self.showAlert(withTitle: "Error", message: error.localizedDescription)
             }else {
-                self.loginAlert(withTitle: "성공", message: "로그인에 성공하셨습니다.", email: email, password: password)
+                self.showHomeViewController()
             }
         }
     }
@@ -61,30 +61,18 @@ final class SigninViewController: UIViewController {
     @IBAction func githubLoginTappedButton(_ sender: UIButton) {
     }
     
-    
-    @IBAction func signupTappedButton(_ sender: UIButton) {
-    }
-    
-    //로그인 성공시 확인 버튼을 누르는 함수(유림)
-    func loginAlert(withTitle title: String, message: String, email: String, password: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { action in
-            self.showHomeViewController()
-        }
-        alert.addAction(okAction)
-        present(alert, animated: true, completion: nil)
-    }
     //홈 버튼으로 가는 함수(유림)
     private func showHomeViewController() {
         if let tabBarController = self.tabBarController {
             tabBarController.selectedIndex = 1
         }
-            self.navigationController?.popViewController(animated: true)
-        }
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     //에러 메세지 알림 출력(유림)
-    func showAlert(withTitle title: String, message: String) {
+    private func showAlert(withTitle title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
-    }    
+    }
 }

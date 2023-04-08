@@ -42,7 +42,6 @@ final class MemberInformationViewController: UIViewController {
     @IBAction func withdrawalButtonTapped(_ sender: UIButton) {
     }
     
-    
     @IBAction func oilSegmentedControlTapped(_ sender: UISegmentedControl) {
     }
     
@@ -51,8 +50,4 @@ final class MemberInformationViewController: UIViewController {
     
     @IBAction func selfSegmentedControlTapped(_ sender: UISegmentedControl) {
     }
-    
-    
-    
-    
 }

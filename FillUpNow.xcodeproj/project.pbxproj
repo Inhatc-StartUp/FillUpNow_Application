@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3999CE2729DF136100DFF6DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3999CE2629DF136100DFF6DE /* GoogleService-Info.plist */; };
+		3986C53E29E165D4007EA949 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3986C53D29E165D4007EA949 /* GoogleService-Info.plist */; };
 		47338CB7BC71F3784202814E /* Pods_FillUpNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C35E83200580933F88E07A /* Pods_FillUpNow.framework */; };
 		F50F945E29DD3D0100D73FC7 /* MemberInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F945D29DD3D0100D73FC7 /* MemberInformationViewController.swift */; };
 		F50F946029DD412D00D73FC7 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F945F29DD412D00D73FC7 /* SignupViewController.swift */; };
@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		11C35E83200580933F88E07A /* Pods_FillUpNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FillUpNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3999CE2629DF136100DFF6DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3986C53D29E165D4007EA949 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6A00400EB6E371A72D83CFA1 /* Pods-FillUpNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FillUpNow.release.xcconfig"; path = "Target Support Files/Pods-FillUpNow/Pods-FillUpNow.release.xcconfig"; sourceTree = "<group>"; };
 		89BFB9DF2593756DDD7DD1CD /* Pods-FillUpNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FillUpNow.debug.xcconfig"; path = "Target Support Files/Pods-FillUpNow/Pods-FillUpNow.debug.xcconfig"; sourceTree = "<group>"; };
 		F50F945D29DD3D0100D73FC7 /* MemberInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberInformationViewController.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 				F5C0EE7929CD5933006DAB0E /* Assets.xcassets */,
 				F5C0EE7B29CD5933006DAB0E /* LaunchScreen.storyboard */,
 				F5C0EE7E29CD5933006DAB0E /* Info.plist */,
-				3999CE2629DF136100DFF6DE /* GoogleService-Info.plist */,
+				3986C53D29E165D4007EA949 /* GoogleService-Info.plist */,
 			);
 			path = FillUpNow;
 			sourceTree = "<group>";
@@ -221,8 +221,8 @@
 				F549934429CEC2C400A3B45A /* HomeStoryboard.storyboard in Resources */,
 				F54993A129CECABE00A3B45A /* Main.storyboard in Resources */,
 				F549934029CEC2A500A3B45A /* MenuStoryboard.storyboard in Resources */,
+				3986C53E29E165D4007EA949 /* GoogleService-Info.plist in Resources */,
 				F549934229CEC2AE00A3B45A /* BookmarkStoryboard.storyboard in Resources */,
-				3999CE2729DF136100DFF6DE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +424,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XYC727LR27;
+				DEVELOPMENT_TEAM = F3737DPVB2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FillUpNow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -437,7 +437,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = juhoom.FillUpNow;
+				PRODUCT_BUNDLE_IDENTIFIER = inhatc.FillUpNow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
