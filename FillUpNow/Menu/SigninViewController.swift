@@ -20,6 +20,12 @@ final class SigninViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        [signinWithAppleButton, signinWithGoogleButton, signinWithGithubButton].forEach {
+            $0?.layer.borderWidth = 1
+            $0?.layer.borderColor = UIColor.gray.cgColor
+            $0?.layer.cornerRadius = 10
+        }
 
     }
     //로그인 버튼을 눌렀을 경우(유림)

@@ -13,7 +13,6 @@ final class SignupViewController: UIViewController{
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordCheckTextField: UITextField!
-    @IBOutlet weak var emailAuthButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
     
     override func viewDidLoad() {
@@ -24,10 +23,6 @@ final class SignupViewController: UIViewController{
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
-    
-    @IBAction func emailAuthTappedButton(_ sender: UIButton) {
-    }
-    
     
     @IBAction func signupTappedButton(_ sender: UIButton) {
 
