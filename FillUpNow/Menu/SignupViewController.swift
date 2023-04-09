@@ -31,6 +31,12 @@ final class SignupViewController: UIViewController{
             return
         }
         
+        // 이메일 형식 검사 코드 호출(유림)
+        guard isValidEmail(email: email) else {
+            showAlert(withTitle: "알림", message: "유효한 이메일 주소를 입력해주세요.")
+            return
+        }
+        
         // 비밀번호를 입력하지 않은 경우(유림)
         guard let password = passwordTextField.text else {
             showAlert(withTitle: "알림", message: "비밀번호를 입력해주세요.")
@@ -49,16 +55,10 @@ final class SignupViewController: UIViewController{
             return
         }
         
-        //이메일 형식 검사 코드(유림)
-        func isValidEmail(email: String) -> Bool {
-            let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-            return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: email)
-        }
-        
-        //비밀번호 형식 검사 코드(유림)
-        func isValidPassword(password: String) -> Bool {
-            let passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
-            return NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: password)
+        // 비밀번호 형식 검사 코드 호출(유림)
+        guard isValidPassword(password: password) else {
+            showAlert(withTitle: "알림", message: "비밀번호는 최소 8자 이상이며, 문자와 숫자를 모두 포함해야 합니다.")
+            return
         }
         
         // 신규 사용자 생성(주훈)
@@ -67,11 +67,24 @@ final class SignupViewController: UIViewController{
             
             if let error = error {
                 self.showAlert(withTitle: "알림", message: error.localizedDescription)
+                
             } else {
                 // 버튼 눌렀을 때 이동하게 만들기
                 self.joinAlert(withTitle: "성공", message: "회원가입에 성공하셨습니다.", email: email, password: password)
             }
         }
+    }
+    
+    //이메일 형식 검사 코드(유림)
+    private func isValidEmail(email: String) -> Bool {
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: email)
+    }
+    
+    //비밀번호 형식 검사 코드(유림)
+    private func isValidPassword(password: String) -> Bool {
+        let passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
+        return NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: password)
     }
     
     // 뷰

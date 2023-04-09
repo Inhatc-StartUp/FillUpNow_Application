@@ -51,6 +51,8 @@ final class SigninViewController: UIViewController {
             }
         }
     }
+    @IBAction func signupTappedButton(_ sender: UIButton) {
+    }
     
     @IBAction func appleLoginTappedButton(_ sender: UIButton) {
     }
