@@ -20,6 +20,8 @@ final class FAQViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewDidLoad()
+        
         [A1Label,A2Label, A3Label, A4Label].forEach {
             $0?.isHidden = true
         }
