@@ -22,6 +22,7 @@ final class MenuViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if let user = Auth.auth().currentUser {
             // 로그인 상태일 때 (유림)
             signinButton.isHidden = true

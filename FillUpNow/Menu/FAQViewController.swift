@@ -9,48 +9,59 @@ import UIKit
 
 final class FAQViewController: UIViewController {
 
-    // 소희 여기부터 !!!!
-    @IBOutlet weak var A1Label: UILabel!
-    @IBOutlet weak var A2Label: UILabel!
-    @IBOutlet weak var A3Label: UILabel!
-    @IBOutlet weak var A4Label: UILabel!
+    // 소희 여기부터 !!!
+    @IBOutlet weak var NicknameAnswerLabel: UILabel!
+    @IBOutlet weak var FindGasStationAnswerLabel: UILabel!
+    @IBOutlet weak var InformationErrorAnswerLabel: UILabel!
+    @IBOutlet weak var StarGasStationAnswer: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewDidLoad()
+        super.viewWillAppear(animated)
         
-        [A1Label,A2Label, A3Label, A4Label].forEach {
+        [NicknameAnswerLabel,
+         FindGasStationAnswerLabel,
+         InformationErrorAnswerLabel,
+         StarGasStationAnswer].forEach {
             $0?.isHidden = true
         }
     }
     
-    @IBAction func Q1ButtonTapped(_ sender: UIButton) {
-        A1Label.isHidden = false
-        [A2Label, A3Label, A4Label].forEach {
+    @IBAction func NicknameChangeQuestionButtonTapped(_ sender: UIButton) {
+        NicknameAnswerLabel.isHidden = false
+        [FindGasStationAnswerLabel,
+         InformationErrorAnswerLabel,
+         StarGasStationAnswer].forEach {
             $0?.isHidden = true
         }
     }
     
-    @IBAction func Q2ButtonTapped(_ sender: UIButton) {
-        A2Label.isHidden = false
-        [A1Label, A3Label, A4Label].forEach {
+    @IBAction func FindGasStationQuestionButtonTapped(_ sender: UIButton) {
+        FindGasStationAnswerLabel.isHidden = false
+        [NicknameAnswerLabel,
+         InformationErrorAnswerLabel,
+         StarGasStationAnswer].forEach {
             $0?.isHidden = true
         }
     }
     
-    @IBAction func Q3ButtonTapped(_ sender: UIButton) {
-        A3Label.isHidden = false
-        [A1Label, A2Label, A4Label].forEach {
+    @IBAction func InformationErrorQuestionButtonTapped(_ sender: UIButton) {
+        InformationErrorAnswerLabel.isHidden = false
+        [NicknameAnswerLabel,
+         FindGasStationAnswerLabel,
+         StarGasStationAnswer].forEach {
             $0?.isHidden = true
         }
     }
     
-    @IBAction func Q4ButtonTapped(_ sender: UIButton) {
-        A4Label.isHidden = false
-        [A1Label, A2Label, A3Label].forEach {
+    @IBAction func StarGasStationQeustionButtonTapped(_ sender: UIButton) {
+        StarGasStationAnswer.isHidden = false
+        [NicknameAnswerLabel,
+         FindGasStationAnswerLabel,
+         InformationErrorAnswerLabel].forEach {
             $0?.isHidden = true
         }
     }

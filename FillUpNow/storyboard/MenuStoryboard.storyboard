@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -696,7 +697,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="Q1ButtonTapped:" destination="p9t-3C-6it" eventType="touchUpInside" id="LUn-5p-2yJ"/>
+                                            <action selector="NicknameChangeQuestionButtonTapped:" destination="p9t-3C-6it" eventType="touchUpInside" id="8fe-VX-Lbp"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하단 메뉴 카테고리에 들어가면, 회원님의 회원정보를 확인할 수 있는 버튼이 있어요. 해당 버튼을 클릭하면 수정이 가능합니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9XL-wk-8it">
@@ -723,7 +724,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="Q2ButtonTapped:" destination="p9t-3C-6it" eventType="touchUpInside" id="WZQ-WS-gKQ"/>
+                                            <action selector="InformationErrorQuestionButtonTapped:" destination="p9t-3C-6it" eventType="touchUpInside" id="pG0-a0-ioz"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="불편을 끼쳐드려 대단히 죄송합니다. inhatc3C@gmail.com으로 연락 주시면 감사하겠습니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGR-tC-V4l">
@@ -747,11 +748,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="34"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="단골 주유소는 어덯게 확인할 수 있나요?">
+                                        <state key="normal" title="단골 주유소는 어떻게 확인할 수 있나요?">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="Q4ButtonTapped:" destination="p9t-3C-6it" eventType="touchUpInside" id="0Jm-Ws-05n"/>
+                                            <action selector="StarGasStationQeustionButtonTapped:" destination="p9t-3C-6it" eventType="touchUpInside" id="MXB-qv-WQ1"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자주 찾으시는 주유소를 즐겨찾기 설정을 해 놓으시면, 하단 즐겨찾기 카테고리에서 자주 찾는 주유소를 확인하실 수 있습니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1z-8J-BR4">
@@ -779,7 +780,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="Q3ButtonTapped:" destination="p9t-3C-6it" eventType="touchUpInside" id="Sox-RG-8lb"/>
+                                            <action selector="FindGasStationQuestionButtonTapped:" destination="p9t-3C-6it" eventType="touchUpInside" id="Mra-qg-NeO"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하단 메뉴 카테고리에 들어가면, 회원님의 회원정보를 확인할 수 있는 버튼이 있어요. 해당 버튼을 클릭하면 원하는 주유소에 대한 정보를 입력하면 지도를 켜자마자 원하는 주유소를 찾을 수 있습니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvO-f6-Qq2">
@@ -820,10 +821,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="자주 묻는 질문" id="iZ3-zX-tcp"/>
                     <connections>
-                        <outlet property="A1Label" destination="9XL-wk-8it" id="Sch-lJ-YGr"/>
-                        <outlet property="A2Label" destination="yGR-tC-V4l" id="ZOl-gf-dfa"/>
-                        <outlet property="A3Label" destination="rvO-f6-Qq2" id="mFI-9M-cUk"/>
-                        <outlet property="A4Label" destination="I1z-8J-BR4" id="ZBy-Aa-KsN"/>
+                        <outlet property="FindGasStationAnswerLabel" destination="rvO-f6-Qq2" id="uyE-yf-4I7"/>
+                        <outlet property="InformationErrorAnswerLabel" destination="yGR-tC-V4l" id="dzq-Nc-mwc"/>
+                        <outlet property="NicknameAnswerLabel" destination="9XL-wk-8it" id="Cei-5j-mw1"/>
+                        <outlet property="StarGasStationAnswer" destination="I1z-8J-BR4" id="AAQ-5g-2vd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCM-Cn-RLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
