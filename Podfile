@@ -7,5 +7,5 @@ target 'FillUpNow' do
 
   # Pods for FillUpNow
   pod 'Firebase/Auth'
-  pod 'GoogleSignIn', '~> 5.0.2'
+  pod 'GoogleSignIn'
 end
