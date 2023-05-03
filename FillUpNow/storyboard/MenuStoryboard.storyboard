@@ -228,9 +228,6 @@
                                                     <segment title="휘발유"/>
                                                     <segment title="고급휘발유"/>
                                                 </segments>
-                                                <connections>
-                                                    <action selector="oilSegmentedControlTapped:" destination="epf-uY-0hZ" eventType="valueChanged" id="Z4H-EH-eW4"/>
-                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
@@ -249,9 +246,6 @@
                                                     <segment title="가까운 곳"/>
                                                     <segment title="저렴한 곳"/>
                                                 </segments>
-                                                <connections>
-                                                    <action selector="locationSegmentedControlTapped:" destination="epf-uY-0hZ" eventType="valueChanged" id="TI6-4i-vfe"/>
-                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
@@ -270,9 +264,6 @@
                                                     <segment title="셀프 O"/>
                                                     <segment title="셀프 X"/>
                                                 </segments>
-                                                <connections>
-                                                    <action selector="selfSegmentedControlTapped:" destination="epf-uY-0hZ" eventType="valueChanged" id="ROk-8v-nbQ"/>
-                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
