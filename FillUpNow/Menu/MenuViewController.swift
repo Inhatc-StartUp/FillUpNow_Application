@@ -13,7 +13,7 @@ final class MenuViewController: UIViewController {
     @IBOutlet weak var userInfoButton: UIButton!
     @IBOutlet weak var signinButton: UIButton!
     @IBOutlet weak var signoutButton: UIButton!
-    @IBOutlet weak var noticeButton: UIButton!
+    @IBOutlet weak var FAQButton: UIButton!
     @IBOutlet weak var pushAlarmSwitch: UISwitch!
     
     override func viewDidLoad() {
@@ -22,6 +22,7 @@ final class MenuViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if let user = Auth.auth().currentUser {
             // 로그인 상태일 때 (유림)
             signinButton.isHidden = true
