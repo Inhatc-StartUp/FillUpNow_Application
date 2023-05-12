@@ -11,6 +11,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
+    // 소희
+    func sceneDidBecomeActive(_ scene: UIScene) {
+        if UIApplication.shared.applicationIconBadgeNumber != 0 {
+            UIApplication.shared.applicationIconBadgeNumber = 0
+        }
+    }
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
