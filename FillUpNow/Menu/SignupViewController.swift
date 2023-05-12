@@ -6,7 +6,9 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 
 final class SignupViewController: UIViewController{
     
@@ -55,9 +57,9 @@ final class SignupViewController: UIViewController{
             return
         }
         
-        // 비밀번호 형식 검사 코드 호출(유림)
+        //비밀번호 형식 검사 코드 호출(유림)
         guard isValidPassword(password: password) else {
-            showAlert(withTitle: "알림", message: "비밀번호는 최소 8자 이상이며, 문자와 숫자를 모두 포함해야 합니다.")
+            showAlert(withTitle: "알림", message: "비밀번호는 최소 8자 이상이며, 문자, 숫자, 특수문자를 모두 포함해야 합니다.")
             return
         }
         
@@ -69,10 +71,17 @@ final class SignupViewController: UIViewController{
                 self.showAlert(withTitle: "알림", message: error.localizedDescription)
                 
             } else {
+                // 실시간 데이터베이스에 회원정보 추가 코드(유림)
+                let uid = Auth.auth().currentUser?.uid // 현재 사용자의 uid 가져오기
+                let userRef = Database.database().reference().child("users").child(uid!) // "users" 노드의 하위 노드로 현재 사용자의 uid를 가진 노드 생성
+                let userData = ["nickname": "", "choiceOil": "", "choiceGasStation": "", "choiceSelf": ""]
+
+                userRef.setValue(userData)
                 // 버튼 눌렀을 때 이동하게 만들기
                 self.joinAlert(withTitle: "성공", message: "회원가입에 성공하셨습니다.", email: email, password: password)
             }
         }
+        
     }
     
     //이메일 형식 검사 코드(유림)
@@ -83,7 +92,7 @@ final class SignupViewController: UIViewController{
     
     //비밀번호 형식 검사 코드(유림)
     private func isValidPassword(password: String) -> Bool {
-        let passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
+        let passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$"
         return NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: password)
     }
     
