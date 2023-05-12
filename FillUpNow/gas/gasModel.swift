@@ -11,8 +11,8 @@ struct gasStationData{
     let region: String
     let shopName: String
     let address: String
-    let selfFueling: String
+    let selfFuel: String
     let premiumGasoline: String
     let gasoline: String
-    let via: String
+    let lightFuel: String
 }

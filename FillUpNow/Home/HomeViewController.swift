@@ -8,7 +8,7 @@
 import UIKit
 import CoreLocation
 
-private final class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
     let locationManager = CLLocationManager()
     let geocoder = CLGeocoder()
     var gasStationDataList: [gasStationData] = []
@@ -44,7 +44,12 @@ extension HomeViewController: CLLocationManagerDelegate{
                 guard let placemark = placemarks?.first else { return }
                 
                 // 시 추출 (주훈)
-                let city = placemark.locality ?? ""
+                var city = placemark.locality ?? ""
+                        if city.isEmpty {
+                            // 시가 비어있는 경우 행정 구역 이름으로 시 설정
+                            city = placemark.subAdministrativeArea ?? ""
+                        }
+                print(city)
                 
                 // 해당 시의 데이터 필터링 (주훈)
                 let filteredData = self.filterDataForCity(city)
@@ -60,7 +65,7 @@ extension HomeViewController: CLLocationManagerDelegate{
 
                 for item in dataArr {
                     if item.count == 7 {
-                        let data = gasStationData(region: item[0], shopName: item[1], address: item[2], selfFueling: item[3], premiumGasoline: item[4], gasoline: item[5], via: item[6])
+                        let data = gasStationData(region: item[0], shopName: item[1], address: item[2], selfFuel: item[3], premiumGasoline: item[4], gasoline: item[5], lightFuel: item[6])
                         gasStationDataList.append(data)
                     }
                 }

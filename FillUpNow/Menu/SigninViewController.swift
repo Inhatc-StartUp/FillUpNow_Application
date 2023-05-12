@@ -12,7 +12,7 @@ import GoogleSignIn
 import AuthenticationServices
 import CryptoKit
 
-private final class SigninViewController: UIViewController {
+final class SigninViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
