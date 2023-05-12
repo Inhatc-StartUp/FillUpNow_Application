@@ -47,30 +47,33 @@ final class MemberInformationViewController: UIViewController {
                 // 업데이트 된 userdto 객체의 프로퍼티들을 UI에 반영
                 self.nameTextField.text = self.userdto?.nickname
                 
-                if self.userdto?.choiceOil == "경유" {
+                switch self.userdto?.choiceOil {
+                case "경유":
                     self.oilSegmentedControl.selectedSegmentIndex = 0
-                } else if self.userdto?.choiceOil == "휘발유" {
+                case "휘발유":
                     self.oilSegmentedControl.selectedSegmentIndex = 1
-                }else {
+                default:
                     self.oilSegmentedControl.selectedSegmentIndex = 2
                 }
                 
-                if self.userdto?.choiceGasStation == "가까운 곳" {
+                switch self.userdto?.choiceGasStation {
+                case "가까운 곳":
                     self.locationSegmentedControl.selectedSegmentIndex = 0
-                }
-                else {
+                default:
                     self.locationSegmentedControl.selectedSegmentIndex = 1
                 }
                 
-                if self.userdto?.choiceSelf == "셀프 O" {
+                switch self.userdto?.choiceSelf {
+                case "셀프 O":
                     self.selfSegmentedControl.selectedSegmentIndex = 0
-                }else {
+                default:
                     self.selfSegmentedControl.selectedSegmentIndex = 1
                 }
             }
         }) { (error) in
             print("Error: \(error.localizedDescription)")
         }
+        
         [nameTextField, oilSegmentedControl, locationSegmentedControl, selfSegmentedControl, saveButton, cancelButton, passwordEditTextField].forEach {
             $0?.isEnabled = false
         }
