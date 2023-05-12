@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39CBCF682A0E7587002F1FDA /* userDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CBCF672A0E7587002F1FDA /* userDTO.swift */; };
 		47338CB7BC71F3784202814E /* Pods_FillUpNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C35E83200580933F88E07A /* Pods_FillUpNow.framework */; };
 		F50F945E29DD3D0100D73FC7 /* MemberInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F945D29DD3D0100D73FC7 /* MemberInformationViewController.swift */; };
 		F50F946029DD412D00D73FC7 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F945F29DD412D00D73FC7 /* SignupViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		11C35E83200580933F88E07A /* Pods_FillUpNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FillUpNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39CBCF672A0E7587002F1FDA /* userDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = userDTO.swift; path = "../../backup/FillUpNow_Application 2/FillUpNow/userDTO.swift"; sourceTree = "<group>"; };
 		6A00400EB6E371A72D83CFA1 /* Pods-FillUpNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FillUpNow.release.xcconfig"; path = "Target Support Files/Pods-FillUpNow/Pods-FillUpNow.release.xcconfig"; sourceTree = "<group>"; };
 		89BFB9DF2593756DDD7DD1CD /* Pods-FillUpNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FillUpNow.debug.xcconfig"; path = "Target Support Files/Pods-FillUpNow/Pods-FillUpNow.debug.xcconfig"; sourceTree = "<group>"; };
 		F50F945D29DD3D0100D73FC7 /* MemberInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberInformationViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				F5C0EE7B29CD5933006DAB0E /* LaunchScreen.storyboard */,
 				F5C0EE7E29CD5933006DAB0E /* Info.plist */,
 				F5D0C9A02A0A1D870014F5D3 /* GoogleService-Info.plist */,
+				39CBCF672A0E7587002F1FDA /* userDTO.swift */,
 			);
 			path = FillUpNow;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5C0EE7D29CD5933006DAB0E /* LaunchScreen.storyboard in Resources */,
+				39CBCF662A0E757C002F1FDA /* GoogleService-Info.plist in Resources */,
 				F5C0EE7A29CD5933006DAB0E /* Assets.xcassets in Resources */,
 				F549934429CEC2C400A3B45A /* HomeStoryboard.storyboard in Resources */,
 				F5992C1A2A0B70010004295F /* Headers in Resources */,
@@ -342,6 +346,7 @@
 			files = (
 				F5F558B629DFE43500ED3233 /* SigninViewController.swift in Sources */,
 				F549933C29CEC1B400A3B45A /* HomeViewController.swift in Sources */,
+				39CBCF682A0E7587002F1FDA /* userDTO.swift in Sources */,
 				F50F946029DD412D00D73FC7 /* SignupViewController.swift in Sources */,
 				F5F30A1A29CECC9800B7566F /* MenuViewController.swift in Sources */,
 				F51200FC29CEAAE000A9715D /* MainTabBarController.swift in Sources */,

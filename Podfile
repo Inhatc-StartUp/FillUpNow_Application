@@ -10,4 +10,7 @@ target 'FillUpNow' do
   pod 'GoogleSignIn'
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging' 
+  pod 'Firebase/Database'
+  pod 'Firebase/Core'
+  
 end
