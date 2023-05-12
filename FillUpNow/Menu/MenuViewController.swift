@@ -7,8 +7,12 @@
 
 import UIKit
 import Firebase
+import UserNotifications
 
 final class MenuViewController: UIViewController {
+    // 소희
+    var isOn: Bool!
+    let userNotificationCenter = UNUserNotificationCenter.current()
     
     @IBOutlet weak var userInfoButton: UIButton!
     @IBOutlet weak var signinButton: UIButton!
@@ -23,6 +27,24 @@ final class MenuViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // 소희
+        pushAlarmSwitch.isOn = UserDefaults.standard.bool(forKey: "pushAlarmSwitchStatus")
+        
+        UNUserNotificationCenter.current().getNotificationSettings {
+            settings in
+            if settings.authorizationStatus == .authorized {
+                DispatchQueue.main.async {
+                    self.pushAlarmSwitch.isOn = true
+                    UserDefaults.standard.set(self.pushAlarmSwitch.isOn, forKey: "pushAlarmSwitchStatus")
+                }
+            } else {
+                DispatchQueue.main.async {
+                    self.pushAlarmSwitch.isOn = false
+                    UserDefaults.standard.set(self.pushAlarmSwitch.isOn, forKey: "pushAlarmSwitchStatus")
+                }
+            }
+        }
+        
         if let user = Auth.auth().currentUser {
             // 로그인 상태일 때 (유림)
             signinButton.isHidden = true
@@ -36,7 +58,24 @@ final class MenuViewController: UIViewController {
         }
     }
     
+    // 소희
+    private func changeAlarmPermission() {
+        if let url = URL(string: UIApplication.openSettingsURLString) {
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
+    }
+    
     @IBAction func pushAlarmSwitchTapped(_ sender: UISwitch) {
+        // 소희
+        if pushAlarmSwitch.isOn {
+            changeAlarmPermission()
+            UserDefaults.standard.set(pushAlarmSwitch.isOn, forKey: "pushAlarmSwitchStatus")
+        } else {
+            changeAlarmPermission()
+            UserDefaults.standard.set(pushAlarmSwitch.isOn, forKey: "pushAlarmSwitchStatus")
+        }
     }
     
     @IBAction func signinButtonTapped(_ sender: UIButton) {
