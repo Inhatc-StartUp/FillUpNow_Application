@@ -7,8 +7,16 @@
 
 import UIKit
 
-final class BookmarkViewController: UIViewController {
+final class BookmarkViewController: UIViewController{
+
+    
+    @IBOutlet var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let nibName = UINib(nibName: "gasStationListCell", bundle: nil)
+        tableView.register(nibName, forCellReuseIdentifier: "gasStationListCell")
     }
 }
+
