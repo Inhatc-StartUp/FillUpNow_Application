@@ -345,6 +345,7 @@
                         <outlet property="locationSegmentedControl" destination="f0K-Xq-vvy" id="rqH-pS-zzM"/>
                         <outlet property="nameTextField" destination="OSv-va-RZs" id="fJE-gg-vzh"/>
                         <outlet property="oilSegmentedControl" destination="jXN-9R-a2z" id="GPA-rF-MkW"/>
+                        <outlet property="passwordEditLabel" destination="tCj-UV-XSS" id="1xz-6b-k3e"/>
                         <outlet property="passwordEditTextField" destination="8Fm-oS-Jww" id="BjK-dx-j2R"/>
                         <outlet property="saveButton" destination="nI7-c2-6Wz" id="eRT-je-z8f"/>
                         <outlet property="selfSegmentedControl" destination="KNG-Fu-5i7" id="re5-2s-VRl"/>
