@@ -49,7 +49,25 @@ final class MenuViewController: UIViewController {
             // 로그인 상태일 때 (유림)
             signinButton.isHidden = true
             signoutButton.isHidden = false
-            userInfoButton.setTitle("\(user.email!)님의 회원정보입니다", for: .normal)
+            let uid = user.uid
+            let ref = Database.database().reference().child("users/\(uid)")
+            ref.observeSingleEvent(of: .value) { snapshot in
+                if let userData = snapshot.value as? [String: Any] {
+                    if let nickname = userData["nickname"] as? String, !nickname.isEmpty {
+                        DispatchQueue.main.async {
+                            self.userInfoButton.setTitle("\(nickname)님의 회원정보입니다", for: .normal)
+                        }
+                    } else {
+                        DispatchQueue.main.async {
+                            self.userInfoButton.setTitle("닉네임을 입력해주세요", for: .normal)
+                        }
+                    }
+                } else {
+                    DispatchQueue.main.async {
+                        self.userInfoButton.setTitle("회원정보를 입력해주세요", for: .normal)
+                    }
+                }
+            }
         } else {
             // 로그아웃 상태일 때 (유림)
             signinButton.isHidden = false

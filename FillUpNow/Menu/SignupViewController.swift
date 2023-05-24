@@ -69,16 +69,9 @@ final class SignupViewController: UIViewController{
             
             if let error = error {
                 self.showAlert(withTitle: "알림", message: error.localizedDescription)
-                
             } else {
-                // 실시간 데이터베이스에 회원정보 추가 코드(유림)
-                let uid = Auth.auth().currentUser?.uid // 현재 사용자의 uid 가져오기
-                let userRef = Database.database().reference().child("users").child(uid!) // "users" 노드의 하위 노드로 현재 사용자의 uid를 가진 노드 생성
-                let userData = ["nickname": "", "choiceOil": "", "choiceGasStation": "", "choiceSelf": ""]
-
-                userRef.setValue(userData)
                 // 버튼 눌렀을 때 이동하게 만들기
-                self.joinAlert(withTitle: "성공", message: "회원가입에 성공하셨습니다.", email: email, password: password)
+                showHomeViewController()
             }
         }
         

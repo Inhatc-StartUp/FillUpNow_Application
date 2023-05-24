@@ -34,6 +34,11 @@ final class SigninViewController: UIViewController {
         }
         
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
     //로그인 버튼을 눌렀을 경우(유림)
     @IBAction func loginTappedButton(_ sender: UIButton) {
         
@@ -67,17 +72,17 @@ final class SigninViewController: UIViewController {
     // 구글 로그인(주훈)
     @IBAction func googleLoginTappedButton(_ sender: UIButton) {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
-
+        
         let config = GIDConfiguration(clientID: clientID)
         GIDSignIn.sharedInstance.configuration = config
-
+        
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { [weak self] result, error in
             
             guard error == nil else {return}
             guard let user = result?.user, let idToken = user.idToken?.tokenString else { return }
-
+            
             let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: user.accessToken.tokenString)
-
+            
             Auth.auth().signIn(with: credential) {[weak self] _, error in
                 guard let self = self else { return }
                 
@@ -166,7 +171,7 @@ extension SigninViewController {
     private func randomNonceString(length: Int = 32) -> String {
         precondition(length > 0)
         let charset: Array<Character> =
-            Array("0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._")
+        Array("0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._")
         var result = ""
         var remainingLength = length
         

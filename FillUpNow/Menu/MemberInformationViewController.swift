@@ -13,6 +13,7 @@ final class MemberInformationViewController: UIViewController {
     
     var userdto: userDTO?
     
+    @IBOutlet var passwordEditLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var passwordEditTextField: UITextField!
     @IBOutlet weak var oilSegmentedControl: UISegmentedControl!
@@ -28,10 +29,23 @@ final class MemberInformationViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        guard let uid = Auth.auth().currentUser?.uid else {
+        // 현재 인증된 사용자 정보 가져오기
+        guard let user = Auth.auth().currentUser else {
             return
         }
         
+        // 이메일 로그인인 경우
+        if user.providerData.contains(where: { $0.providerID == "password" }) {
+            passwordEditTextField.isHidden = false
+        }
+        
+        // 소셜로그인인 경우
+        else {
+            passwordEditTextField.isHidden = true
+            passwordEditLabel.isHidden = true
+        }
+        
+        let uid = user.uid
         let ref = Database.database().reference().child("users").child(uid)
         
         ref.observeSingleEvent(of: .value, with: { (snapshot) in
@@ -78,8 +92,10 @@ final class MemberInformationViewController: UIViewController {
             $0?.isEnabled = false
         }
     }
-
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
     
     @IBAction func editButtonTapped(_ sender: UIBarButtonItem) {
         [nameTextField, oilSegmentedControl, locationSegmentedControl, selfSegmentedControl, saveButton, cancelButton, passwordEditTextField].forEach {
@@ -88,6 +104,21 @@ final class MemberInformationViewController: UIViewController {
     }
     
     @IBAction func saveButtonTapped(_ sender: UIButton) {
+        
+        if let newPassword = passwordEditTextField.text, newPassword.isEmpty == false {
+            // 비밀번호가 입력되었을 경우, 유효성 검사 진행
+            guard isValidPassword(password: newPassword) else {
+                showAlert(withTitle: "알림", message: "비밀번호는 8자 이상, 영문자/숫자/특수문자를 각각 1개 이상 포함해야 합니다.")
+                return
+            }
+            Auth.auth().currentUser?.updatePassword(to: newPassword) { [weak self] (error) in
+                guard error == nil else {
+                    print("Error: \(error!.localizedDescription)")
+                    self?.showAlert(withTitle: "알림", message: "비밀번호 변경에 실패했습니다.")
+                    return
+                }
+            }
+        }
         
         guard let nickname = nameTextField.text else {
             return
@@ -136,13 +167,20 @@ final class MemberInformationViewController: UIViewController {
                     print("Error updating child values: \(error.localizedDescription)")
                 } else {
                     print("Child values updated successfully")
-                    self.showAlert(withTitle: "알림", message: "정보가 저장되었습니다..")
+                    self.navigationController?.popViewController(animated: true)
                 }
             }
         }
     }
     
+    //비밀번호 형식 검사 코드(유림)
+    private func isValidPassword(password: String) -> Bool {
+        let passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$"
+        return NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: password)
+    }
+    
     @IBAction func cancelButtonTapped(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func withdrawalButtonTapped(_ sender: UIButton) {

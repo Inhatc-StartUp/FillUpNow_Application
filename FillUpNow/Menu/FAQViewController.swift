@@ -8,7 +8,7 @@
 import UIKit
 
 final class FAQViewController: UIViewController {
-
+    
     // 소희 여기부터 !!!
     @IBOutlet weak var NicknameAnswerLabel: UILabel!
     @IBOutlet weak var FindGasStationAnswerLabel: UILabel!
