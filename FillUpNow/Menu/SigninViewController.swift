@@ -26,6 +26,7 @@ final class SigninViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemBackground
         
         [signinWithAppleButton, signinWithGoogleButton, signinWithGithubButton].forEach {
             $0?.layer.borderWidth = 1

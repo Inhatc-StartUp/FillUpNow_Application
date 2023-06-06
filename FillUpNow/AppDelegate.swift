@@ -9,6 +9,8 @@ import UIKit
 import Firebase
 import UserNotifications
 import FirebaseMessaging
+import GoogleMaps
+import GooglePlaces
 
 
 @main
@@ -24,7 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Messaging.messaging().delegate = self
         Messaging.messaging().isAutoInitEnabled = true
         
-        if #available(iOS 9.0, *) {
+        GMSServices.provideAPIKey(Access.gmsServicesProvideAPIKey)
+        GMSPlacesClient.provideAPIKey(Access.gmsServicesProvideAPIKey)        
+        
+        if #available(iOS 14.0, *) {
             UNUserNotificationCenter.current().delegate = self
             
             let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
@@ -84,7 +89,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 // 소희 (2)
-@available(iOS 9, *)
+@available(iOS 14.0, *)
 extension AppDelegate: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         
