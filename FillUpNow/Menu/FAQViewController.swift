@@ -21,6 +21,7 @@ final class FAQViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        view.backgroundColor = .systemBackground
         
         [NicknameAnswerLabel,
          FindGasStationAnswerLabel,

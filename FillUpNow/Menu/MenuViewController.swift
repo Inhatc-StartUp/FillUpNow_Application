@@ -19,6 +19,7 @@ final class MenuViewController: UIViewController {
     @IBOutlet weak var signoutButton: UIButton!
     @IBOutlet weak var FAQButton: UIButton!
     @IBOutlet weak var pushAlarmSwitch: UISwitch!
+    @IBOutlet var pushAlarmButtonText: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

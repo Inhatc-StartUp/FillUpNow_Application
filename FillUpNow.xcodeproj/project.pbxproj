@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		47338CB7BC71F3784202814E /* Pods_FillUpNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C35E83200580933F88E07A /* Pods_FillUpNow.framework */; };
-		8C345DA62A0E98E200F1C7E9 /* data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C345DA52A0E98E200F1C7E9 /* data.csv */; };
 		8C98DA872A078C8600F1415C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C98DA862A078C8600F1415C /* GoogleService-Info.plist */; };
-		8C98DA8F2A07A7D500F1415C /* gasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C98DA8E2A07A7D500F1415C /* gasModel.swift */; };
 		8CF56F762A1214FE00C7A391 /* userDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF56F752A1214FE00C7A391 /* userDTO.swift */; };
 		8CFB22FC2A149FBB009AD6A9 /* gasStationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFB22FA2A149FBB009AD6A9 /* gasStationListCell.swift */; };
 		8CFB22FD2A149FBB009AD6A9 /* gasStationListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CFB22FB2A149FBB009AD6A9 /* gasStationListCell.xib */; };
@@ -23,21 +21,21 @@
 		F549934229CEC2AE00A3B45A /* BookmarkStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F549934129CEC2AE00A3B45A /* BookmarkStoryboard.storyboard */; };
 		F549934429CEC2C400A3B45A /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F549934329CEC2C400A3B45A /* HomeStoryboard.storyboard */; };
 		F54993A129CECABE00A3B45A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54993A029CECABE00A3B45A /* Main.storyboard */; };
+		F56CE8332A2486B300913A02 /* Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56CE8322A2486B300913A02 /* Access.swift */; };
 		F58E4F9A29CED2C3008AB6AA /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58E4F9929CED2C3008AB6AA /* FAQViewController.swift */; };
-		F5992C1C2A0B70E30004295F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5992C1B2A0B70E30004295F /* OpenGLES.framework */; };
-		F5992C1E2A0B70E80004295F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5992C1D2A0B70E80004295F /* QuartzCore.framework */; };
+		F5957A262A2D8B1A003942EE /* GasInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5957A252A2D8B1A003942EE /* GasInformationViewController.swift */; };
+		F5957A292A2D8CD7003942EE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F5957A282A2D8CD7003942EE /* SnapKit */; };
 		F5992C202A0B70F40004295F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5992C1F2A0B70F40004295F /* CoreLocation.framework */; };
-		F5992C222A0B70FA0004295F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5992C212A0B70FA0004295F /* SystemConfiguration.framework */; };
 		F5992C242A0B71000004295F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5992C232A0B71000004295F /* UIKit.framework */; };
 		F5992C262A0B71050004295F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5992C252A0B71050004295F /* Foundation.framework */; };
 		F5992C282A0B710A0004295F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5992C272A0B710A0004295F /* CoreGraphics.framework */; };
-		F5992C2A2A0B71140004295F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5992C292A0B71140004295F /* libsqlite3.tbd */; };
-		F5992C2C2A0B711B0004295F /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5992C2B2A0B711B0004295F /* libxml2.tbd */; };
-		F5992C2E2A0B71210004295F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5992C2D2A0B71200004295F /* libc++.tbd */; };
 		F5C0EE7129CD5933006DAB0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C0EE7029CD5933006DAB0E /* AppDelegate.swift */; };
 		F5C0EE7329CD5933006DAB0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C0EE7229CD5933006DAB0E /* SceneDelegate.swift */; };
 		F5C0EE7A29CD5933006DAB0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C0EE7929CD5933006DAB0E /* Assets.xcassets */; };
 		F5C0EE7D29CD5933006DAB0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C0EE7B29CD5933006DAB0E /* LaunchScreen.storyboard */; };
+		F5CFB3892A2E3B6000413E91 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CFB3882A2E3B6000413E91 /* Marker.swift */; };
+		F5CFB38B2A2E3D5900413E91 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CFB38A2A2E3D5900413E91 /* Coordinates.swift */; };
+		F5CFB38E2A2E438E00413E91 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F5CFB38D2A2E438E00413E91 /* Alamofire */; };
 		F5D0C9A12A0A1D870014F5D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5D0C9A02A0A1D870014F5D3 /* GoogleService-Info.plist */; };
 		F5F30A1A29CECC9800B7566F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F30A1929CECC9800B7566F /* MenuViewController.swift */; };
 		F5F558B629DFE43500ED3233 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58E4F9229CED23C008AB6AA /* SigninViewController.swift */; };
@@ -47,9 +45,7 @@
 		11C35E83200580933F88E07A /* Pods_FillUpNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FillUpNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A00400EB6E371A72D83CFA1 /* Pods-FillUpNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FillUpNow.release.xcconfig"; path = "Target Support Files/Pods-FillUpNow/Pods-FillUpNow.release.xcconfig"; sourceTree = "<group>"; };
 		89BFB9DF2593756DDD7DD1CD /* Pods-FillUpNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FillUpNow.debug.xcconfig"; path = "Target Support Files/Pods-FillUpNow/Pods-FillUpNow.debug.xcconfig"; sourceTree = "<group>"; };
-		8C345DA52A0E98E200F1C7E9 /* data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = data.csv; path = ../../../Downloads/data.csv; sourceTree = "<group>"; };
 		8C98DA862A078C8600F1415C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		8C98DA8E2A07A7D500F1415C /* gasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gasModel.swift; sourceTree = "<group>"; };
 		8C98DA942A0A17CB00F1415C /* FillUpNow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FillUpNow.entitlements; sourceTree = "<group>"; };
 		8CF56F752A1214FE00C7A391 /* userDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userDTO.swift; sourceTree = "<group>"; };
 		8CFB22FA2A149FBB009AD6A9 /* gasStationListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gasStationListCell.swift; sourceTree = "<group>"; };
@@ -63,25 +59,23 @@
 		F549934129CEC2AE00A3B45A /* BookmarkStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookmarkStoryboard.storyboard; sourceTree = "<group>"; };
 		F549934329CEC2C400A3B45A /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
 		F54993A029CECABE00A3B45A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F56CE8322A2486B300913A02 /* Access.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Access.swift; sourceTree = "<group>"; };
 		F58545F829F8EA6C00589DC3 /* FillUpNowRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FillUpNowRelease.entitlements; sourceTree = "<group>"; };
 		F58E4F9229CED23C008AB6AA /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		F58E4F9929CED2C3008AB6AA /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
-		F5992C1B2A0B70E30004295F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		F5992C1D2A0B70E80004295F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F5957A252A2D8B1A003942EE /* GasInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasInformationViewController.swift; sourceTree = "<group>"; };
 		F5992C1F2A0B70F40004295F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		F5992C212A0B70FA0004295F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F5992C232A0B71000004295F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F5992C252A0B71050004295F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F5992C272A0B710A0004295F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F5992C292A0B71140004295F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		F5992C2B2A0B711B0004295F /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
-		F5992C2D2A0B71200004295F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		F5C0EE6D29CD5933006DAB0E /* FillUpNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FillUpNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C0EE7029CD5933006DAB0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5C0EE7229CD5933006DAB0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F5C0EE7929CD5933006DAB0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5C0EE7C29CD5933006DAB0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5C0EE7E29CD5933006DAB0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5CFB3882A2E3B6000413E91 /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
+		F5CFB38A2A2E3D5900413E91 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		F5D0C9A02A0A1D870014F5D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F5ECD16F2A038C8B007E3F24 /* FillUpNow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FillUpNow.entitlements; sourceTree = "<group>"; };
 		F5F30A1929CECC9800B7566F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -92,16 +86,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5992C2E2A0B71210004295F /* libc++.tbd in Frameworks */,
-				F5992C2C2A0B711B0004295F /* libxml2.tbd in Frameworks */,
-				F5992C2A2A0B71140004295F /* libsqlite3.tbd in Frameworks */,
 				F5992C282A0B710A0004295F /* CoreGraphics.framework in Frameworks */,
+				F5CFB38E2A2E438E00413E91 /* Alamofire in Frameworks */,
 				F5992C262A0B71050004295F /* Foundation.framework in Frameworks */,
 				F5992C242A0B71000004295F /* UIKit.framework in Frameworks */,
-				F5992C222A0B70FA0004295F /* SystemConfiguration.framework in Frameworks */,
+				F5957A292A2D8CD7003942EE /* SnapKit in Frameworks */,
 				F5992C202A0B70F40004295F /* CoreLocation.framework in Frameworks */,
-				F5992C1E2A0B70E80004295F /* QuartzCore.framework in Frameworks */,
-				F5992C1C2A0B70E30004295F /* OpenGLES.framework in Frameworks */,
 				47338CB7BC71F3784202814E /* Pods_FillUpNow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,27 +108,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		8C98DA8C2A07A78800F1415C /* gas */ = {
-			isa = PBXGroup;
-			children = (
-				8C98DA8E2A07A7D500F1415C /* gasModel.swift */,
-			);
-			path = gas;
-			sourceTree = "<group>";
-		};
 		EE1E472ABBDBB2D026556465 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F5992C2D2A0B71200004295F /* libc++.tbd */,
-				F5992C2B2A0B711B0004295F /* libxml2.tbd */,
-				F5992C292A0B71140004295F /* libsqlite3.tbd */,
 				F5992C272A0B710A0004295F /* CoreGraphics.framework */,
 				F5992C252A0B71050004295F /* Foundation.framework */,
 				F5992C232A0B71000004295F /* UIKit.framework */,
-				F5992C212A0B70FA0004295F /* SystemConfiguration.framework */,
 				F5992C1F2A0B70F40004295F /* CoreLocation.framework */,
-				F5992C1D2A0B70E80004295F /* QuartzCore.framework */,
-				F5992C1B2A0B70E30004295F /* OpenGLES.framework */,
 				11C35E83200580933F88E07A /* Pods_FillUpNow.framework */,
 			);
 			name = Frameworks;
@@ -155,14 +131,25 @@
 			path = storyboard;
 			sourceTree = "<group>";
 		};
+		F56CE8362A248FF900913A02 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8CF56F752A1214FE00C7A391 /* userDTO.swift */,
+				F56CE8322A2486B300913A02 /* Access.swift */,
+				F5CFB3882A2E3B6000413E91 /* Marker.swift */,
+				F5CFB38A2A2E3D5900413E91 /* Coordinates.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		F58E4F9629CED24D008AB6AA /* Menu */ = {
 			isa = PBXGroup;
 			children = (
 				F5F30A1929CECC9800B7566F /* MenuViewController.swift */,
 				F58E4F9229CED23C008AB6AA /* SigninViewController.swift */,
 				F58E4F9929CED2C3008AB6AA /* FAQViewController.swift */,
-				F50F945D29DD3D0100D73FC7 /* MemberInformationViewController.swift */,
 				F50F945F29DD412D00D73FC7 /* SignupViewController.swift */,
+				F50F945D29DD3D0100D73FC7 /* MemberInformationViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -170,7 +157,9 @@
 		F58E4F9729CED283008AB6AA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F51200FB29CEAAE000A9715D /* MainTabBarController.swift */,
 				F549933B29CEC1B400A3B45A /* HomeViewController.swift */,
+				F5957A252A2D8B1A003942EE /* GasInformationViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -179,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				F549933D29CEC1CB00A3B45A /* BookmarkViewController.swift */,
+				8CFB22FA2A149FBB009AD6A9 /* gasStationListCell.swift */,
+				8CFB22FB2A149FBB009AD6A9 /* gasStationListCell.xib */,
 			);
 			path = Bookmark;
 			sourceTree = "<group>";
@@ -204,11 +195,7 @@
 		F5C0EE6F29CD5933006DAB0E /* FillUpNow */ = {
 			isa = PBXGroup;
 			children = (
-				8CFB22FA2A149FBB009AD6A9 /* gasStationListCell.swift */,
-				8CFB22FB2A149FBB009AD6A9 /* gasStationListCell.xib */,
 				8C98DA942A0A17CB00F1415C /* FillUpNow.entitlements */,
-				8C98DA8C2A07A78800F1415C /* gas */,
-				8CF56F752A1214FE00C7A391 /* userDTO.swift */,
 				8C98DA862A078C8600F1415C /* GoogleService-Info.plist */,
 				F5ECD16F2A038C8B007E3F24 /* FillUpNow.entitlements */,
 				F58545F829F8EA6C00589DC3 /* FillUpNowRelease.entitlements */,
@@ -216,13 +203,12 @@
 				F58E4F9729CED283008AB6AA /* Home */,
 				F58E4F9829CED28C008AB6AA /* Bookmark */,
 				F549934529CEC2D700A3B45A /* storyboard */,
+				F56CE8362A248FF900913A02 /* Entity */,
 				F5C0EE7029CD5933006DAB0E /* AppDelegate.swift */,
 				F5C0EE7229CD5933006DAB0E /* SceneDelegate.swift */,
-				F51200FB29CEAAE000A9715D /* MainTabBarController.swift */,
 				F5C0EE7929CD5933006DAB0E /* Assets.xcassets */,
 				F5C0EE7B29CD5933006DAB0E /* LaunchScreen.storyboard */,
 				F5C0EE7E29CD5933006DAB0E /* Info.plist */,
-				8C345DA52A0E98E200F1C7E9 /* data.csv */,
 				F5D0C9A02A0A1D870014F5D3 /* GoogleService-Info.plist */,
 			);
 			path = FillUpNow;
@@ -240,12 +226,17 @@
 				F5C0EE6A29CD5932006DAB0E /* Frameworks */,
 				F5C0EE6B29CD5932006DAB0E /* Resources */,
 				781A119515EC3CFFEDB684AA /* [CP] Embed Pods Frameworks */,
+				A40A7EB67A37531AC6BD8EE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FillUpNow;
+			packageProductDependencies = (
+				F5957A282A2D8CD7003942EE /* SnapKit */,
+				F5CFB38D2A2E438E00413E91 /* Alamofire */,
+			);
 			productName = FillUpNow;
 			productReference = F5C0EE6D29CD5933006DAB0E /* FillUpNow.app */;
 			productType = "com.apple.product-type.application";
@@ -274,6 +265,10 @@
 				Base,
 			);
 			mainGroup = F5C0EE6429CD5932006DAB0E;
+			packageReferences = (
+				F5957A272A2D8CD7003942EE /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F5CFB38C2A2E438E00413E91 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F5C0EE6E29CD5933006DAB0E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -294,7 +289,6 @@
 				F5D0C9A12A0A1D870014F5D3 /* GoogleService-Info.plist in Resources */,
 				8CFB22FD2A149FBB009AD6A9 /* gasStationListCell.xib in Resources */,
 				F54993A129CECABE00A3B45A /* Main.storyboard in Resources */,
-				8C345DA62A0E98E200F1C7E9 /* data.csv in Resources */,
 				F549934029CEC2A500A3B45A /* MenuStoryboard.storyboard in Resources */,
 				F549934229CEC2AE00A3B45A /* BookmarkStoryboard.storyboard in Resources */,
 				8C98DA872A078C8600F1415C /* GoogleService-Info.plist in Resources */,
@@ -319,6 +313,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FillUpNow/Pods-FillUpNow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A40A7EB67A37531AC6BD8EE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FillUpNow/Pods-FillUpNow-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FillUpNow/Pods-FillUpNow-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FillUpNow/Pods-FillUpNow-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C7D4353284032DA0090B5582 /* [CP] Check Pods Manifest.lock */ = {
@@ -354,14 +365,17 @@
 				F549933C29CEC1B400A3B45A /* HomeViewController.swift in Sources */,
 				8CF56F762A1214FE00C7A391 /* userDTO.swift in Sources */,
 				F50F946029DD412D00D73FC7 /* SignupViewController.swift in Sources */,
+				F5CFB38B2A2E3D5900413E91 /* Coordinates.swift in Sources */,
 				F5F30A1A29CECC9800B7566F /* MenuViewController.swift in Sources */,
 				F51200FC29CEAAE000A9715D /* MainTabBarController.swift in Sources */,
 				F5C0EE7129CD5933006DAB0E /* AppDelegate.swift in Sources */,
 				8CFB22FC2A149FBB009AD6A9 /* gasStationListCell.swift in Sources */,
 				F5C0EE7329CD5933006DAB0E /* SceneDelegate.swift in Sources */,
-				8C98DA8F2A07A7D500F1415C /* gasModel.swift in Sources */,
+				F5CFB3892A2E3B6000413E91 /* Marker.swift in Sources */,
 				F58E4F9A29CED2C3008AB6AA /* FAQViewController.swift in Sources */,
+				F5957A262A2D8B1A003942EE /* GasInformationViewController.swift in Sources */,
 				F50F945E29DD3D0100D73FC7 /* MemberInformationViewController.swift in Sources */,
+				F56CE8332A2486B300913A02 /* Access.swift in Sources */,
 				F549933E29CEC1CB00A3B45A /* BookmarkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,6 +592,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5957A272A2D8CD7003942EE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F5CFB38C2A2E438E00413E91 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5957A282A2D8CD7003942EE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5957A272A2D8CD7003942EE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		F5CFB38D2A2E438E00413E91 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5CFB38C2A2E438E00413E91 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F5C0EE6529CD5932006DAB0E /* Project object */;
 }

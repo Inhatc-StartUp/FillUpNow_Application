@@ -14,7 +14,7 @@ final class BookmarkViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         let nibName = UINib(nibName: "gasStationListCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "gasStationListCell")
     }
