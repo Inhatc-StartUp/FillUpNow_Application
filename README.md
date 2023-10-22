@@ -1,9 +1,9 @@
 # 3학년 1학기 Start-Up 프로젝트
 
-## 1. 멤버
-201944096 이주훈
-202144020 한소희
-202144033 표유림
+## 1. 멤버<br>
+201944096 이주훈<br>
+202144020 한소희<br>
+202144033 표유림<br>
 
 ## 2. 시스템 구성도
 <img width="481" alt="image" src="https://github.com/Inhatc-StartUp/FillUpNow_Application/assets/86885227/574e697c-65a6-42cf-a8c2-759e115fa5ce">
@@ -17,6 +17,8 @@
 <img width="612" alt="image" src="https://github.com/Inhatc-StartUp/FillUpNow_Application/assets/86885227/342de845-7fa3-45a5-9e9f-0de2620072fa">
 
 ## 5. 시연
+![로그인 회원가입](https://github.com/Inhatc-StartUp/FillUpNow_Application/assets/86885227/8e4e328d-a58d-4c09-bc1a-ced039995b71)
+![홈 화면](https://github.com/Inhatc-StartUp/FillUpNow_Application/assets/86885227/127ee401-6539-4d53-805d-6bc711a73962)
 
 
 
