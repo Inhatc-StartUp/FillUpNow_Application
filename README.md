@@ -17,7 +17,7 @@
 <img width="612" alt="image" src="https://github.com/Inhatc-StartUp/FillUpNow_Application/assets/86885227/342de845-7fa3-45a5-9e9f-0de2620072fa">
 
 ## 5. 시연
-![로그인 회원가입](https://github.com/Inhatc-StartUp/FillUpNow_Application/assets/86885227/8e4e328d-a58d-4c09-bc1a-ced039995b71)
+![로그인 회원가입](https://github.com/Inhatc-StartUp/FillUpNow_Application/assets/86885227/73e55e6d-5f7d-4674-8aa8-be301098447b)
 ![홈 화면](https://github.com/Inhatc-StartUp/FillUpNow_Application/assets/86885227/127ee401-6539-4d53-805d-6bc711a73962)
 
 
